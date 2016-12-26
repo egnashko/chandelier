@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Century Gothic Regular";
+    src: url("../fonts/GOTHIC.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic Bold";
+    src: url("../fonts/GOTHICB.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic Italic";
+    src: url("../fonts/GOTHICI.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic Bold Italic";
+    src: url("../fonts/GOTHICBI.TTF") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "NautilusPompiliusRegular";
+    src: url("../fonts/NautilusPompiliusRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadPro-Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}

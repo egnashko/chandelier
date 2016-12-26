@@ -1,0 +1,581 @@
+<?php
+define("RS","/chandelier/");
+$meta_title = "Home | Коло світла | Каталог";
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>inside_galary</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/ico" href="vklad_img.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/ion.rangeSlider.css" rel="stylesheet" />
+    <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/normalize2.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+</head>
+<body>
+<!--preload-->
+<div id="p_prldr">
+    <div class="contpre">
+        <img src="img/menu/main_logo.png">
+    </div>
+</div>
+<!--nav-->
+<button class="nav_btn" id="nav_btn">
+    <div class="btn_line"></div>
+    <div class="btn_line"></div>
+    <div class="btn_line"></div>
+</button>
+<section class="nav_over">
+    <nav class="">
+        <img src="img/menu/new_logo_chand_03.png" id="logo_img" class="">
+        <p><b>коло</b><br>світла</p>
+        <div class="nav_devider"></div>
+        <ul>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/catalog.php">каталог<b class="nav_ind"></b></a>
+            </li>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/about.php">о нас<b></b></a>
+            </li>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/delivery.php">оплата<br>доставка<b></b></a>
+            </li>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/faq.php">FAQ<b></b></a>
+            </li>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/reviews.php">отзывы<b></b></a>
+            </li>
+            <li>
+                <a href="#">акции<b></b></a>
+            </li>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/news_main.php">новости<b></b></a>
+            </li>
+            <li>
+                <a href="http://egor.daricvety.com.ua/chandelier/contacts.php">контакты<b></b></a>
+            </li>
+        </ul>
+        <div class="sicial_links">
+            <a><div class="facebook-logo"></div></a>
+            <a><div class="instagram-logo"></div></a>
+        </div>
+    </nav>
+</section>
+<!--nav-->
+<div class="catalog_head vertical_1 ques_cont_0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="catalog_headline">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 search">
+                    <div class="catalog_search">
+                        <button class="searck_slide_button"></button>
+                        <input type="text">
+                        <a class="catalog_search_icon"></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="catalog_logo">
+                        <p class="logo_colo">коло</p>
+                        <p class="logo_svitla">світла</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="bucket_part">
+                        <a href="javascript:void(0);"><span class="account"></span></a>
+                        <a href="javascript:void(0);"><span class="lock"></span></a>
+                        <a href="http://egor.daricvety.com.ua/chandelier/liked.php"><span class="like"></span></a>
+                        <div class="media_col_down">
+                            <a href="javascript:void(0);"><span class="bucket" id="bucket"><b>2</b></span></a>
+                            <a href="javascript:void(0);"><span class="price"><b>40.000</b> грн</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid catalog_menu_back">
+        <div class="row">
+            <div class="catalog_menu">
+                <button id="catalog_menu">каталог</button>
+                <div class="catalog_menu_off">
+                    <div href="javascript:void(0);" class="brand_slide"><a class="chandelier_lamps">люстры</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="sconce_lamps">бра</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="floor_lamps">торшеры</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="desk_lamps">настольные</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="point_lamps">точечные</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="child_lamps">дестские</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="bath_lamps">для&nbspванных</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="street_lamps">уличные</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="shade_lamps">абажур</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                    <div href="javascript:void(0);" class="brand_slide"><a class="lamps-lamps">лампочки</a>
+                        <div class="lamp_brands">
+                            <a><img src="img/catalog/brands/elstead.png"><b>elstead</b></a>
+                            <a><img src="img/catalog/brands/eseo.png"><b>eseo</b></a>
+                            <a><img src="img/catalog/brands/philips.png"><b>philips</b></a>
+                            <a><img src="img/catalog/brands/massive.png"><b>massive</b></a>
+                            <a><img src="img/catalog/brands/feiss.png"><b>feiss</b></a>
+                            <a><img src="img/catalog/brands/hinkley.png"><b>hinkley</b></a>
+                            <a><img src="img/catalog/brands/lirio.png"><b>lirio</b></a>
+                            <a><img src="img/catalog/brands/quoizel.png"><b>quoizel</b></a>
+                            <a><img src="img/catalog/brands/flambeau.png"><b>flambeau</b></a>
+                            <a><img src="img/catalog/brands/lighttopps.png"><b>lighttopps</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="gallary_inside">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-12 bread_crumbs vertical ques_cont_fade">
+                    <a>главная</a> / <a>галерея</a> / <a>elstead light</a>
+                </div>
+                <div class="col-xs-12 about_headline">
+                    <h2>НАША <span>ГАЛЕРЕЯ</span></h2>
+                </div>
+                <div class="col-xs-12">
+<!--                    <div class="gallary_pic_posiion">-->
+                        <div class="gallary_pic"></div>
+<!--                    </div>-->
+                    <div class="gallary_logo">
+                        <img src="img/catalog/brands/elstead.png">
+                    </div>
+                    <div class="gallary_headline">
+                        <h2>Elstead Lighting: светильники, меняющие дизайн помещения</h2>
+                        <div class="gallary_devider"></div>
+                    </div>
+                    <div class="gallary_info">
+                        <p>Британский бренд Elstead — самый известный представитель рынка осветительной техники из
+                            Великобритании. Эта семейная компания не просто смогла завоевать популярность в своей стране:
+                            она весьма успешно конкурирует с итальянскими, немецкими, чешскими, австрийскими фирмами, многие
+                            из которых предлагают коллекции светильников уже более ста лет.<br><br>
+                            Притом посоревноваться с известными европейскими производителями Elstead Lighting удается не
+                            только в плане качества, но и дизайна изделий. Неслучайно английская компания является членом
+                            организации ACID (Anti-Copying in Design), защищающей авторские права на художественные решения.<br><br>
+                            Справедливости ради нужно сказать, что компания Elstead Lighting немолодая: она была основана
+                            в 1967-м, однако семья Лукас в течение многих веков занималась кузнечным делом. Изготавливать
+                            светильники они начали случайно: один из заказчиков не забрал товар и его решили выставить в
+                            витрине в надежде, что он приглянется местным жителям. Светильники раскупили очень быстро, и
+                            Джеффри Лукас решил продолжить их выпускать. В 1971-м к нему присоединился брат Стефан.
+                            Кузнецы сами разрабатывали дизайн изделий, занимались их производством и продажей, однако вскоре
+                            почувствовали, что семейной кузни им уже не хватает. Было решено открыть полноценную фабрику,
+                            и вложения окупились буквально за несколько лет. Крупные заказы сыпались на Elstead Lighting
+                            один за другим, предприятие уверенно развивалось. Завоевав позиции на внутреннем рынке, компания
+                            начала экспортировать изделия. Сегодня у бренда два завода — в Англии и Польше.</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-xs-12 gallary_photos">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg" rel="gallery"><div class="plus_size"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg" rel="gallery"><div class="plus_size"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg"><div class="plus_size" rel="gallery"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg"><div class="plus_size" rel="gallery"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg"><div class="plus_size" rel="gallery"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg"><div class="plus_size" rel="gallery"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg"><div class="plus_size" rel="gallery"></div></a></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="the_photo" style="background: url(img/gallary/pic.jpg) no-repeat center;"><a class="photo_size fancybox" href="img/gallary/pic.jpg"><div class="plus_size" rel="gallery"></div></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="ques_cont_2 vertical">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2 media_contacts">
+                <div class="contacts">
+                    <h3>Коло<br>свiтла</h3>
+                    <p><a href="tel:+38 095 716 74 98"><span>095</span> 716 7498</a></p>
+                    <p><a href="tel:+38 095 719 84 97"><span>095</span> 719 8497</a></p>
+                </div>
+            </div>
+            <!--<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">-->
+            <div class="col-xs-8 col-sm-8 col-md-10 col-lg-10 media_search">
+                <div class="search_chand">
+                    <input type="text"><a href=""><img src="img/footer/search_icon_03.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 ">
+                    <div class="footer_list_1">
+                        <ul>
+                            <li><a href="">о нас</a></li>
+                            <li><a href="">контакты</a></li>
+                            <li><a href="">отзывы</a></li>
+                            <li><a href="">акции</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div class="catalog row">
+                        <p><a href="">каталог</a></p>
+                        <div class="col-xs-12 col-sm-2 col-sm-offset-1">
+                            <ul>
+                                <li><a href="">люстры</a></li>
+                                <li><a href="">потолочные</a></li>
+                                <li><a href="">бра</a></li>
+                                <li><a href="">торшеры</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-sm-offset-2">
+                            <ul>
+                                <li><a href="">настольные</a></li>
+                                <li><a href="">точечные</a></li>
+                                <li><a href="">споты</a></li>
+                                <li><a href="">детские</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-sm-offset-2">
+                            <ul>
+                                <li><a href="">для&nbspванных</a></li>
+                                <li><a href="">уличные</a></li>
+                                <li><a href="">абажур</a></li>
+                                <li><a href="">лампочки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <div class="footer_list_2">
+                        <ul>
+                            <li><a href="">оплата<br>доставка</a></li>
+                            <li><a href="">faq</a></li>
+                            <li><a href="">новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prava">
+        <p>© 2016 <span>коло світла.</span> ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+    </div>
+</footer>
+<!--modal-->
+<section class="modal" id="modal">
+    <div class="modal_window">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="modal_headline">
+                        <div class="modal_devider"></div>
+                        <h1>Регистрация на сайте</h1>
+                        <div class="modal_devider"></div>
+                    </div>
+                    <div class="modal_inputs">
+                        <div class="input_container">
+                            <div class="input_circle yes_indicator"></div>
+                            <input type="text" placeholder="Ваше имя" id="inp_info1" oninput="changeInput(this)">
+                        </div>
+                        <div class="input_container">
+                            <div class="input_circle no_indicator"></div>
+                            <input type="text" placeholder="Ваша фамилия" id="inp_info2" oninput="changeInput(this)">
+                        </div>
+                        <div class="input_container">
+                            <div class="input_circle"></div>
+                            <input type="text" placeholder="Email" id="inp_info3" oninput="changeInput(this)">
+                        </div>
+                        <div class="input_container">
+                            <div class="input_circle"></div>
+                            <input type="text" placeholder="Пароль" id="inp_info4" oninput="changeInput(this)">
+                        </div>
+                    </div>
+                    <p><span class="open_modal_autorize">Я уже зарегестрирован</span><span class="dev_dev"></span>
+                        <span class="open_modal_remember">Напомнить пароль</span></p>
+                    <button>отправить</button>
+                </div>
+                <div class="close_modal close_modal_btn"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--bucket_modal-->
+<div class="over_buck">
+    <section class="bucket_modal" id="bucket_modal">
+        <div class="bucket_modal_window">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 ur_bucket">
+                        <p>ваша <span>корзина</span></p>
+                    </div>
+                    <div class="col-xs-12 product">
+                        <div class="bucket_img"></div>
+                        <div class="bucket_info">
+                            <div class="buck_chand_info">
+                                <h4>Люстра Feiss</h4>
+                                <p>FE / DRAWINGRM / SFC</p>
+                                <span>Код: <b>32063/31/16</b></span>
+                                <div class="bucket_devider"></div>
+                            </div>
+                            <div class="buck_info_buttons">
+                                <div class="buttons">
+                                    <button class="minus_btn"></button>
+                                    <input type="number" value="1">
+                                    <button class="plus_btn"></button>
+                                </div>
+                                <div class="buck_price">
+                                    <p>Цена<br><span>9486.00 грн</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 product">
+                        <div class="bucket_img"></div>
+                        <div class="bucket_info">
+                            <div class="buck_chand_info">
+                                <h4>Люстра Feiss</h4>
+                                <p>FE / DRAWINGRM / SFC</p>
+                                <span>Код: <b>32063/31/16</b></span>
+                                <div class="bucket_devider"></div>
+                            </div>
+                            <div class="buck_info_buttons">
+                                <div class="buttons">
+                                    <button class="minus_btn"></button>
+                                    <input type="number" value="1">
+                                    <button class="plus_btn"></button>
+                                </div>
+                                <div class="buck_price">
+                                    <p>Цена<br><span>9486.00 грн</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 checkout">
+                        <div class="all_summ">
+                            <p>Общая сумма:<br><span>18972 грн</span></p>
+                        </div>
+                        <div class="checkout_button">
+                            <button>оформить заказ</button>
+                            <a>оформить в один клик</a>
+                        </div>
+                    </div>
+                    <div class="close_bucket_modal close_modal_btn"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--modal_autorize-->
+<section class="modal_autorize" id="modal_autorize">
+    <div class="modal_autorize_window">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="modal_headline">
+                        <div class="modal_devider"></div>
+                        <h1>Авторизация на сайте</h1>
+                        <div class="modal_devider"></div>
+                    </div>
+                    <div class="modal_inputs">
+                        <div class="input_container">
+                            <div class="input_circle"></div>
+                            <input type="text" placeholder="Email" id="inp_aut_1" oninput="changeInput(this)">
+                        </div>
+                        <div class="input_container">
+                            <div class="input_circle"></div>
+                            <input type="text" placeholder="Пароль" id="inp_aut_2" oninput="changeInput(this)">
+                        </div>
+                    </div>
+                    <p><span class="open_reg_modal">Зарегестрироваться</span><span class="dev_dev"></span>
+                        <span class="open_modal_remember">Напомнить пароль</span></p>
+                    <button>отправить</button>
+                </div>
+                <div class="close_modal close_modal_btn"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--modal_remember-->
+<section class="modal_remember" id="modal_remember">
+    <div class="modal_remember_window">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="modal_headline">
+                        <div class="modal_devider"></div>
+                        <h1>Напомнить пароль</h1>
+                        <div class="modal_devider"></div>
+                    </div>
+                    <div class="modal_inputs">
+                        <div class="input_container">
+                            <div class="input_circle"></div>
+                            <input type="text" placeholder="Email" id="inp_rememer" oninput="changeInput(this)">
+                        </div>
+                    </div>
+                    <p><span class="open_modal_autorize">Я уже зарегестрирован</span><span class="dev_dev"></span>
+                        <span class="open_reg_modal">Зарегестрироваться</span></p>
+                    <button>отправить</button>
+                </div>
+                <div class="close_modal close_modal_btn"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/on-screen.umd.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
